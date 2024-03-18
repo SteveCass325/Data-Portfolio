@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Tamales.css">
+    <title>Tavola</title>
+    <script type="module" src="Backend/TavolaOrder.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Homepage.html" id="home">Home</a>
+        <a href="Cart.html" id="cart">Cart</a>
+        <div class="dropdown">
+          <button class="dropbtn">Restaurants 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Tamales.html" id="tamales">Tamales</a>
+            <a href="TheGrill.html" id="the-grill">The Grill</a>
+            <a href="Tavola.html" id="tavola">Tavola</a>
+            <a href="Wasabi.html" id="wasabi">Wasabi</a>
+            <a href="Greenfields.html" id="greenfields">Greenfields</a>
+            <a href="StarGinger.html" id="star-ginger">Star Ginger</a>
+            <a href="DeliDelish.html" id="deli-delish">Chef's Table</a>
+          </div>
+        </div> 
+    </div>
+<body>
+    <h1>Tavola</h1>
+    <h3>Hours of Operation: 11am - 8pm</h3>
+    <h2 id="customize-order">Customize Your Order</h2><br>
+    <body>
+        <div class="container">
+            <div class="order">
+                <p>Fladbreads & Piadinas</p>
+                <input type="radio" id="margherita" name="choose-item" value="Margherita">
+                <label for="choose-item">Margherita $9.00</label><br>
+                <input type="radio" id="chicken-pesto" name="choose-item" value="Chicken Pesto">
+                <label for="choose-item">Chicken Pesto $9.50</label><br>
+                <input type="radio" id="piadina" name="choose-item" value="Piadina">
+                <label for="choose-item">Piadina $9.50</label>
+            
+                <br><br>
+                <p>Pasta Bowls $9.00</p>
+                <input type="radio" id="penne-chicken" name="choose-item" value="Penne with Chicken">
+                <label for="choose-item">Penne with chicken broccoli alfredo</label><br>
+                <input type="radio" id="rigatone" name="choose-item" value="Rigatone">
+                <label for="choose-item">Rigatone with tomatoes, spicy fennel sausage, and cream</label><br>
+                <input type="radio" id="penne-sausage" name="choose-item" value="Penne with Sausage">
+                <label for="choose-item">Penne with Italian sausage, broccolini and ricotta</label>
+            
+                <br><br>
+                <p>Hummus Bowls $9.00</p>
+                <p>Freshly made Hummus, Marinated Olives, Imported Feta,</p>
+                <p>Cucumber & Tomato Salad, Pickled Onions, with Freshly Baked Pita</p>
+                <input type="radio" id="falafel-bowl" name="choose-item" value="Falafel Bowl">
+                <label for="choose-item">Falafel with tahini</label><br>
+                <input type="radio" id="beef-bowl" name="choose-item" value="Beef Bowl">
+                <label for="choose-item">Beef kefta skewers with tzatziki</label><br>
+                <input type="radio" id="lamb-bowl" name="choose-item" value="Lamb Bowl">
+                <label for="choose-item">Lamb kefta skewers with tzatziki</label><br>
+                <input type="radio" id="chicken-bowl" name="choose-item" value="Chicken Bowl">
+                <label for="choose-item">Chicken skewers with romesco</label>
+            
+                <br><br>
+                <p>Mediterranean Wrap $9.00</p>
+                <p>With Hummus, Feta, Cucumber, Tomato, Pickled Red Onions</p>
+                <p>And Local Greens Wrapper in a Freshly Baked Pita</p>
+                <input type="radio" id="falafel-wrap" name="choose-item" value="Falafel Wrap">
+                <label for="choose-item">Falafel</label><br>
+                <input type="radio" id="chicken-wrap" name="choose-item" value="Chicken Wrap">
+                <label for="choose-item">Grilled Chicken</label><br>
+                <input type="radio" id="lamb-wrap" name="choose-item" value="Lamb Wrap">
+                <label for="choose-item">Lamb kefta</label><br>
+                <input type="radio" id="beef-wrap" name="choose-item" value="Beef Wrap">
+                <label for="choose-item">Beef kefta</label>
+
+                <br><br>
+                <p>Tavola Salad $9.00</p>
+                <p>Local Greens, Cucumber, Tomatoes, Pickled Red Onions, Dolma, Importaed Feta</p>
+                <p>Marinated Onions, Lemon Oregano Vinagrette, Fresh Pita plus Two Skewers or Falafel</p>
+                <input type="radio" id="falafel-salad" name="choose-item" value="Falafel Salad">
+                <label for="choose-item">Falafel</label><br>
+                <input type="radio" id="chicken-salad" name="choose-item" value="Chicken Salad">
+                <label for="choose-item">Grilled Chicken</label><br>
+                <input type="radio" id="lamb-salad" name="choose-item" value="Lamb Salad">
+                <label for="choose-item">Lamb</label><br>
+                <input type="radio" id="beef-wrapsalad" name="choose-item" value="Beef Salad">
+                <label for="choose-item">Beef</label>
+
+                <br><br>
+                <p>Sabich $9.50</p>
+                <p>Fresh House-Made Pita Topped with Hummus, Roasted Eggplant</p>
+                <p>Hard-Boiled Egg, Cucumber Tomato Salad, Parsley and Amba Drizzle</p>
+                <input type="radio" id="sabich" name="choose-item" value="Sabich">
+                <label for="choose-item">Sabich</label><br>
+
+                <br><br>
+                <p>Choose Add Ons</p>
+                <input type="checkbox" id="beef-addon" name="choose-addons" value="Beef Skewers">
+                <label for="choose-addons">2 Beef Kefta Skewer $5.50</label><br>
+                <input type="checkbox" id="chicken-addon" name="choose-addons" value="Chicken Skewers">
+                <label for="choose-addons">2 Spanish Grilled Chicken Skewer $4.50</label><br>
+                <input type="checkbox" id="lamb-addon" name="choose-addons" value="Lamb Skewer">
+                <label for="choose-addons">2 Moroccan Lamb Kefta Skewer $5.50</label><br>
+                <input type="checkbox" id="falafel-addon" name="choose-addons" value="Falafel">
+                <label for="choose-addons">Falafel $3.50</label><br>
+                <input type="checkbox" id="grape-addon" name="choose-addons" value="Stuffed Grape Leaves">
+                <label for="choose-addons">Stuffed Grape Leaves</label><br>
+                <input type="checkbox" id="pita-addon" name="choose-addons" value="Pita Bread">
+                <label for="choose-addons">Pita Bread $2.50</label><br>
+                <input type="checkbox" id="hummus-addon" name="choose-addons" value="Hummus">
+                <label for="choose-addons">Hummus $3.50</label><br>
+
+                <br>
+                <p>Special Instructions</p>
+                <textarea name="instructions" id="instructions" cols="60" rows="4" maxlength="150" placeholder="No tomatoes, extra cucumber"></textarea>
+
+                <br><br>
+                <input type="submit" id="submit-order" value="Add to Cart">
+                <br><br>
+            </div>
+        </div>
+    </body>
+</html>

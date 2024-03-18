@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Tamales.css">
+    <title>Tavola</title>
+    <script type="module" src="Backend/GreenfieldsOrder.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Homepage.html" id="home">Home</a>
+        <a href="Cart.html" id="cart">Cart</a>
+        <div class="dropdown">
+          <button class="dropbtn">Restaurants 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Tamales.html" id="tamales">Tamales</a>
+            <a href="TheGrill.html" id="the-grill">The Grill</a>
+            <a href="Tavola.html" id="tavola">Tavola</a>
+            <a href="ChefsTable.html" id="chefs-table">Chef's Table</a>
+            <a href="Wasabi.html" id="wasabi">Wasabi</a>
+            <a href="YumBakery.html" id="yum-bakery">Yum! Bakery</a>
+            <a href="Greenfields.html" id="greenfields">Greenfields</a>
+            <a href="StarGinger.html" id="star-ginger">Star Ginger</a>
+          </div>
+        </div> 
+    </div>
+<body>
+    <h1>Greenfields</h1>
+    <h3>Hours of Operation: 11am - 8pm</h3>
+    <h2 id="customize-order">Customize Your Order</h2><br>
+    <body>
+        <div class="container">
+            <div class="order">
+                <input type="radio" id="Garden" name="choose-item" value="Garden Salad">
+                <label for="choose-item">Garden Salad $6.50</label>
+                <p>Mixed Greens, Croutons, Sliced Almonds, Carrots, Cucumbers & Tomatoes with Balsamic Vinaigrette</p>
+                <br>
+                <input type="radio" id="Caesar" name="choose-item" value="Caesar Salad">
+                <label for="choose-item">Caesar Salad $6.50</label><br>
+                <p>Romaine, Croutons & Shredded Parmesan with Organic Caesar Dressing</p>
+                <br>
+                <input type="radio" id="Southwestern" name="choose-item" value="Southwestern Salad">
+                <label for="choose-item">Southwestern Salad $7.50</label><br>
+                <p>Mixed Greens, Roasted Corn, Black Beans, Fresh Avocado, Sliced Peppers & Onions with Chipotle Ranch Dressing</p>
+                <br>
+                <input type="radio" id="Fruit" name="choose-item" value="Fruit and Nut Salad">
+                <label for="choose-item">Fruit And Nut Salad $7.50</label><br>
+                <p>Mixed Greens, Fresh Blueberries, Almonds, Feta Cheese with Blueberry Pomegranate Dressing</p>
+                <br>
+                <input type="radio" id="Bluewall" name="choose-item" value="Blue Wall Power Salad">
+                <label for="choose-item">Blue Wall Power Salad $8.50</label><br>
+                <p>Mixed Greens, Black Beans, Spicy Chickpeas, Blueberries, Egg, Avocado and Sweet Potato with Blueberry Pomegranate Dressing</p>
+                <br>
+                <input type="radio" id="Buffalo" name="choose-item" value="Buffalo Chicken Salad">
+                <label for="choose-item">Buffalo Chicken Salad $9.00</label><br>
+                <p>Mixed Greens, Hand Battered Antibiotic Free Buffalo Chicken, Blue Cheese, Diced Celery, Grape Tomatoes with Ranch Dressing</p> 
+                <br>
+                <input type="radio" id="Mediterranean" name="choose-item" value="Mediterranean Salad">
+                <label for="choose-item">Mediterranean Salad $9.00</label><br>
+                <p>Mixed Greens, Cucumbers, Spicy Chickpeas, Kalamata Olives, Feta Cheese, Dolmas, Diced ABF Chicken with Greek Dressing</p>    
+                <input type="radio" id="Pesto" name="choose-item" value="Pesto Chicken Salad">
+                <label for="choose-item">Pesto Chicken Salad $9.50</label><br>
+                <p>Mixed Greens, Pesto Grilled Chicken, Fresh Mozzarella, Grape Tomatoes and Croutons</p> 
+                <br>
+                <input type="radio" id="Cobb" name="choose-item" value="Cobb Salad">
+                <label for="choose-item">Cobb Salad $9.50</label><br>
+                <p>Mixed Greens, Diced Antibiotic Free Chicken, Nitrate Free Bacon, Local Cage-Free Hard Boiled Egg, Blue Cheese, Fresh Avocado and Grape Tomatoes with Balsamic Vinaigrette</p> 
+                <br>
+                <input type="radio" id="Breaded" name="choose-item" value="Breaded Chicken Tenders">
+                <label for="choose-item">Breaded Chicken Tenders $9.50</label><br>
+                <p>Chicken Tenders with Blue Cheese or Ranch Dressing. Searved with Carrot and Celery Sticks</p> 
+                <br>
+
+                <br>
+                <p>Choose Add Ons</p>
+                <input type="checkbox" id="egg-addon" name="choose-addons" value="Hard Boiled Egg">
+                <label for="choose-addons">Hard Boiled Egg $1.00</label><br>
+                <input type="checkbox" id="chickpeas-addon" name="choose-addons" value="Spiced Chickpeas">
+                <label for="choose-addons">Spiced Chickpeas $1.00</label><br>
+                <input type="checkbox" id="wrap-addon" name="choose-addons" value="Extra Wrap">
+                <label for="choose-addons">Extra Wrap $1.00</label><br>
+                <input type="checkbox" id="potato-addon" name="choose-addons" value="Sweet Potato">
+                <label for="choose-addons">Sweet Potato $1.00</label><br>
+                <input type="checkbox" id="hummus-addon" name="choose-addons" value="Hummus">
+                <label for="choose-addons">Hummus $1.50</label><br>
+                <input type="checkbox" id="cheese-addon" name="choose-addons" value="Extra Cheese">
+                <label for="choose-addons">Extra Cheese $1.50</label><br>
+                <input type="checkbox" id="avocado-addon" name="choose-addons" value="Avocado">
+                <label for="choose-addons">Sliced Avocado $1.50</label><br>
+                <input type="checkbox" id="tofu-addon" name="choose-addons" value="Tofu Bites">
+                <label for="choose-addons">Tofu Bites $2.00</label><br>
+                <input type="checkbox" id="bacon-addon" name="choose-addons" value="Bacon">
+                <label for="choose-addons">Bacon Cumbles $2.00</label><br>
+                <input type="checkbox" id="chicken-addon" name="choose-addons" value="Chicken">
+                <label for="choose-addons">Chicken Tenders $3.00</label><br>
+                <br>
+                <p>Special Instructions</p>
+                <textarea name="instructions" id="instructions" cols="60" rows="4" maxlength="150" placeholder="Dressing on the side"></textarea>
+
+                <br><br>
+                <input type="submit" id="submit-order" value="Add to Cart">
+                <br><br>
+            </div>
+        </div>
+    </body>
+</html>

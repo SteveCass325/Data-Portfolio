@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="TheGrill.css">
+    <title>Tamales</title>
+    <script type="module" src="Backend/TheGrillOrder.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Homepage.html" id="home">Home</a>
+        <a href="Cart.html" id="cart">Cart</a>
+        <div class="dropdown">
+          <button class="dropbtn">Restaurants 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Tamales.html" id="tamales">Tamales</a>
+            <a href="TheGrill.html" id="the-grill">The Grill</a>
+            <a href="Tavola.html" id="tavola">Tavola</a>
+            <a href="Wasabi.html" id="wasabi">Wasabi</a>
+            <a href="Greenfields.html" id="greenfields">Greenfields</a>
+            <a href="StarGinger.html" id="star-ginger">Star Ginger</a>
+            <a href="DeliDelish.html" id="deli-delish">Chef's Table</a>
+          </div>
+        </div> 
+    </div>
+<body>
+    <h1>The Grill</h1>
+    <h3>Hours of Operation: 11am - 8pm</h3>
+    <h2 id="customize-order">Customize Your Order</h2><br>
+    <body>
+        <div class="container">
+            <div class="order">
+                    <p>Single or Double?</p>
+                    <input type="radio" id="double" name="Single-or-Double" value="Single">
+                    <label for="Single-or-Double">Single  $5.00</label><br>
+                    <input type="radio" id="double" name="Single-or-Double" value="Double">
+                    <label for="Single-or-Double">Double  $7.50</label><br>
+                    <p>Choose Meat</p>
+                    <input type="radio" id="beef" name="choose-meat" value="Beef">
+                    <label for="choose-meat">Beef</label><br>
+                    <input type="radio" id="turkey" name="choose-meat" value="Turkey">
+                    <label for="choose-meat">Turkey</label><br>
+                    <input type="radio" id="chicken" name="choose-meat" value="Breaded Chicken">
+                    <label for="choose-meat">Breaded Chicken</label><br>
+                    <input type="radio" id="awesome" name="choose-meat" value="Awesome Burger">
+                    <label for="choose-meat">Awesome Burger</label><br>
+                
+                    <p>Choose Cheese</p>
+                    <input type="radio" id="american" name="choose-cheese" value="American">
+                    <label for="choose-cheese">American</label><br>
+                    <input type="radio" id="swiss" name="choose-cheese" value="Swiss">
+                    <label for="choose-cheese">Swiss</label><br>
+                    <input type="radio" id="cheddar" name="choose-cheese" value="Cheddar">
+                    <label for="choose-cheese">Cheddar</label><br>
+                    <input type="radio" id="pepperjack" name="choose-cheese" value="Pepper Jack">
+                    <label for="choose-cheese">Pepper Jack</label><br>
+                    <input type="radio" id="no" name="choose-cheese" value="No Cheese">
+                    <label for="choose-cheese">No Cheese</label><br>
+                    <p>Choose Toppings</p>
+                    <input type="checkbox" id="onions" name="choose-toppings" value="Caramelized Onions">
+                    <label for="choose-toppings">Caramelized Onions  +$0.75</label><br>
+                    <input type="checkbox" id="mushrooms" name="choose-toppings" value="Sauteed Mushrooms">
+                    <label for="choose-toppings">Sauteed Mushrooms  +$0.75</label><br>
+                    <input type="checkbox" id="egg" name="choose-toppings" value="Fried Egg">
+                    <label for="choose-toppings">Fried Egg  +$1.00</label><br>
+                    <input type="checkbox" id="xcheese" name="choose-toppings" value="Extra Cheese">
+                    <label for="choose-toppings">Extra Cheese  +$1.50</label><br>
+                    <input type="checkbox" id="avacado" name="choose-toppings" value="Avacado">
+                    <label for="choose-toppings">Avacado  +$1.50</label><br>
+                    <input type="checkbox" id="bacon" name="choose-toppings" value="Bacon">
+                    <label for="choose-toppings">Bacon  +$2.00</label><br>
+
+                    <p>Choose Add Ons</p>
+                    <input type="checkbox" id="fries" name="choose-addons" value="French Fries">
+                    <label for="choose-addons">French Fries  $3.00</label><br>
+                    <input type="checkbox" id="rings" name="choose-addons" value="Onions Rings">
+                    <label for="choose-addons">Onion Rings  $3.50</label><br>
+                    <input type="checkbox" id="sweetfries" name="choose-addons" value="Sweet Potato Fries">
+                    <label for="choose-addons">Sweet Potato Fries  $3.50</label><br>
+                    <input type="checkbox" id="chickentenders" name="choose-addons" value="Chicken Tenders">
+                    <label for="choose-addons">Chicken Tenders  $7.50</label><br>
+                    <input type="checkbox" id="vmilkshake" name="choose-addons" value="Vanilla Milkshake">
+                    <label for="choose-addons">Vanilla Milkshake  $5.50</label><br>
+                    <input type="checkbox" id="cmilkshake" name="choose-addons" value="Chocolate Milkshake">
+                    <label for="choose-addons">Chocolate Milkshake  $5.50</label><br>
+                    <input type="checkbox" id="smilkshake" name="choose-addons" value="Strawberry Milkshake">
+                    <label for="choose-addons">Strawberry Milkshake  $5.50</label><br>
+                    <input type="checkbox" id="spmilkshake" name="choose-addons" value="Specialty Milkshake">
+                    <label for="choose-addons">Specialty Milkshake  $5.50</label><br>
+                    <br>
+                    <p>Special Instructions</p>
+                    <textarea name="instructions" id="instructions" cols="60" rows="4" maxlength="150" placeholder="No ketchup"></textarea>
+                    <br><br><input type="submit" id="submit-order" value="Add to Cart">
+                    <br><br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

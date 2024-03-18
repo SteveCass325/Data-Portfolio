@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Tamales.css">
+    <title>Deli Delish</title>
+    <script type="module" src="Backend/DeliDelishorder.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Homepage.html" id="home">Home</a>
+        <a href="Cart.html" id="cart">Cart</a>
+        <div class="dropdown">
+          <button class="dropbtn">Restaurants 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Tamales.html" id="tamales">Tamales</a>
+            <a href="TheGrill.html" id="the-grill">The Grill</a>
+            <a href="Tavola.html" id="tavola">Tavola</a>
+            <a href="Wasabi.html" id="wasabi">Wasabi</a>
+            <a href="Greenfields.html" id="greenfields">Greenfields</a>
+            <a href="StarGinger.html" id="star-ginger">Star Ginger</a>
+            <a href="DeliDelish.html" id="deli-delish">Deli Delish</a>
+          </div>
+        </div> 
+    </div>
+<body>
+    <h1>Deli Delish</h1>
+    <h3>Hours of Operation: 11am - 4:30pm</h3>
+    <h2 id="customize-order">Customize Your Order</h2><br>
+    <body>
+        <div class="container">
+            <div class="order">
+                <p>Warm Sandwhiches:</p>
+                <input type="radio" id="three-cheese-and-spinach" name="choose-item" value="Three Cheese and Spinach">
+                <label for="choose-item">Three Cheese and Spinach...... $7.00</label><br>
+                <input type="radio" id="the-blt" name="choose-item" value="The BLT">
+                <label for="choose-item">The BLT...... $8.00</label><br>
+                <input type="radio" id="chicken-parmesan" name="choose-item" value="Chicken Parmesan">
+                <label for="choose-item">Chicken Parmesan...... $8.00</label><br>
+                <input type="radio" id="meatball-grinder" name="choose-item" value="Meatball Grinder">
+                <label for="choose-item">Meatball Grinder...... $8.50</label><br>
+                
+            
+                <br>
+                <p>Hot Ciabattas:</p>
+                <input type="radio" id="caprese" name="choose-item" value="Caprese">
+                <label for="choose-item">Caprese...... $7.50</label><br>
+                <input type="radio" id="chicken-bacon-ranch" name="choose-item" value="Chicken Bacon Ranch">
+                <label for="choose-item">Chicken Bacon Ranch...... $8.50</label><br>
+                <input type="radio" id="buffalo-chicken" name="choose-item" value="Buffalo Chicken">
+                <label for="choose-item">Buffalo Chicken...... $8.50</label><br>
+                <input type="radio" id="chicken-and-pesto" name="choose-item" value="Chicken and Pesto">
+                <label for="choose-item">Chicken and Pesto...... $8.50</label><br>
+            
+                <br>
+                <p>Fresh Sanchwhiches:</p>
+                <input type="radio" id="chicken-salad" name="choose-item" value="Chicken Salad">
+                <label for="choose-item">Chicken Salad...... $7.50</label><br>
+                <input type="radio" id="italian-cold-cut" name="choose-item" value="Italian Cold Cut">
+                <label for="choose-item">Italian Cold Cut...... $8.00</label><br>
+                <input type="radio" id="classic-grinder" name="choose-item" value="Classic Grinder">
+                <label for="choose-item">Classic Grinder...... $8.00</label><br>
+                <input type="radio" id="blue-wall-club" name="choose-item" value="Blue Wall Club">
+                <label for="choose-item">Blue Wall Club...... $8.00</label><br>
+            
+                <br>
+                <p>Sanchwhich Add Ons:</p>
+                <input type="checkbox" id="veggies" name="choose-add-ons" value="Extra Cheese">
+                <label for="choose-add-ons">Extra Cheese...... $1.50</label><br>
+                <input type="checkbox" id="fresh-avocado" name="choose-add-ons" value="Fresh Avocado">
+                <label for="choose-add-ons">Avocado...... $1.50</label><br>
+                <input type="checkbox" id="bacon" name="choose-add-ons" value="Bacon">
+                <label for="choose-add-ons">Bacon...... $2.00</label><br>
+                <input type="checkbox" id="extra-meat" name="choose-add-ons" value="Extra Meat">
+                <label for="choose-add-ons">Extra Meat...... $3.00</label><br>
+                <input type="checkbox" id="chips" name="choose-add-ons" value="Chips and Drink">
+                <label for="choose-add-ons">House Made Potato Chips with Fountain Beverage...... $2.00</label><br>
+
+
+
+                <br>
+                <p>Special Instructions</p>
+                <textarea name="instructions" id="instructions" cols="60" rows="4" maxlength="150" placeholder="No lettuce, extra onions"></textarea>
+
+                <br>
+                <input type="submit" id="submit-order" value="Add to Cart">
+                <br><br>
+            </div>
+        </div>
+    </body>
+</html>
